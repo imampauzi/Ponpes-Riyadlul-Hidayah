@@ -939,4 +939,37 @@ iframe {
     h2 {
         font-size: 20px; /* Menyesuaikan ukuran font judul */
     }
+    
+}
+/* --- Gambar Responsif --- */
+.responsive-image {
+    max-width: 100%; /* Membatasi lebar maksimum sesuai elemen induk */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Menghapus margin default untuk gambar */
+}
+
+/* --- Video YouTube Responsif --- */
+.responsive-video {
+    position: relative;
+    width: 100%; /* Mengisi lebar penuh elemen induk */
+    padding-bottom: 56.25%; /* Rasio aspek 16:9 */
+    height: 0; /* Tinggi dihitung dari padding */
+}
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Mengisi lebar penuh */
+    height: 100%; /* Mengisi tinggi penuh */
+}
+
+/* --- Tambahan Gaya Umum (Opsional) --- */
+.container {
+    max-width: 1200px;
+    margin: 1000 auto;
+    padding: 10px;
+}
+/* --- Trata kiri kanan (Opsional) --- */
+.text-justify {
+    text-align: justify;
 }
