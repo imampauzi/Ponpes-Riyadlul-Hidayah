@@ -285,7 +285,7 @@ a.btn.btn-utama {
 .section-title h2:after{
     position: absolute;
     content: "";
-    width: 600%;
+    width: 60%;
     height: 3px;
     background-color: #f2c808;
     bottom: -20px ;
