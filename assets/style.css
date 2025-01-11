@@ -11,7 +11,7 @@ a, a:hover{
 #topbar {
     background-color: #15477a;
     color: #ffffff;
-    height: 40px;
+    height: 57px;
     line-height: 40px;
 }
 
@@ -214,11 +214,11 @@ a.btn.btn-utama {
     background-color: #062646;
 }
 
-#sambutan{
+#Profil{
     margin: 50px;
 }
 
-#sambutan h2{
+#Profil h2{
     color: #15477a;
     font-size: 28px; 
     font-weight: 600;  
@@ -227,14 +227,14 @@ a.btn.btn-utama {
     letter-spacing: 0.3px;
 }
 
-#sambutan h3{
+#Profil h3{
     color: #15477a;
     font-weight: 500;
     margin-left: 20px; 
     text-transform: capitalize;
 }
 
-#sambutan p{
+#Profil p{
     color: #888888;
     font-size: 14px ; 
     font-family: Raleway, sans-serif;
@@ -242,14 +242,14 @@ a.btn.btn-utama {
     margin-left: 20px; 
 }
 
-#sambutan .btn.btn-utama{
+#Profil .btn.btn-utama{
     margin-left: 20px;
     text-transform: capitalize;
     font-weight: 400;
     background-color: #15477a;
     padding : 7px 12px;
 }
-#sambutan a.btn.btn-utama:hover{
+#Profil a.btn.btn-utama:hover{
     background-color: #0f3a64;
     transition: background-color 0.3s;
 }
@@ -972,4 +972,137 @@ iframe {
 /* --- Trata kiri kanan (Opsional) --- */
 .text-justify {
     text-align: justify;
+}
+/* CSS tambahan untuk mobile */
+@media (max-width: 768px) {
+    /* Topbar */
+    #topbar {
+        height: auto;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .top-contact, .sosmed {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #topbar li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Header */
+    header {
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .brand {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand img {
+        margin: 0 0 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .nav-item {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* Hero Slider */
+    #hero-area .slider-item-content {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+    }
+    #slider-hero-nav .owl-prev, 
+    #slider-hero-nav .owl-next {
+        top: 60%;
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    /* Profil Section */
+    #Profil {
+        margin: 20px 10px;
+    }
+    #Profil h2 {
+        font-size: 22px;
+    }
+    #Profil p {
+        font-size: 12px;
+    }
+
+    /* Prestasi Section */
+    #prestasi .section-title h2 {
+        font-size: 22px;
+    }
+    .section-item {
+        box-shadow: none;
+        margin: 10px 0;
+    }
+    .section-thumnail {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px;
+        text-align: center;
+    }
+    footer .brand {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .sosmed {
+        justify-content: center;
+    }
+    footer .sosmed li {
+        margin: 5px;
+    }
+
+    /* Alumni Section */
+    #alumni {
+        padding: 20px 10px;
+        height: auto;
+    }
+    #alumni .section-item-slider {
+        height: auto;
+        padding: 10px;
+    }
+    #alumni .section-item-content h3 {
+        font-size: 16px;
+    }
+
+    /* Ekstrakurikuler */
+    #ekstrakulikuler .section-body-item {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    #ekstrakulikuler .section-body-item h4 {
+        font-size: 18px;
+    }
+
+    /* Galeri Section */
+    .video-galeri {
+        height: auto;
+    }
+
+    /* Berita Section */
+    #berita .section-content h3 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    #berita .section-thumbnail {
+        height: auto;
+    }
 }
